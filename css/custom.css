@@ -1,3 +1,6 @@
+/*
+General style
+ */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -15,9 +18,36 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
     margin-left: auto;
 }
 @media (min-width: 1200px) {
+    /* Keep width when screen is big */
     .container {
         width: 1170px;
     }
+}
+
+input,textarea {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+}
+input:focus,textarea:focus {
+    /* Highlight when input selected */
+    border: 1px solid rgb(0, 123, 255);
+}
+input:focus,select:focus,textarea:focus,button:focus {
+    /* Remove browser auto highlight */
+    outline: none;
+}
+
+button {
+    background-color: #107ef4;
+    color: #fff;
+    padding: 10px;
+    border: 1px solid #4198f6;
+    border-radius: 3px;
+}
+button:hover {
+    background-color: #4198f6;
 }
 
 /*
@@ -60,6 +90,31 @@ nav {
 }
 
 /*
+Footer
+ */
+.footer-column {
+    float: left;
+    width: 33.33%;
+}
+
+.footer-column > div {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+    .footer-column {
+        width: 100%;
+    }
+}
+
+footer p {
+    display: block;
+}
+
+/*
 Homepage
  */
 .content-box {
@@ -74,7 +129,6 @@ Homepage
 }
 
 .content-product {
-    background-size: cover;
     background:
         /* top, transparent black, faked with gradient */
         linear-gradient(
@@ -82,13 +136,13 @@ Homepage
             rgba(255, 255, 255, 0.2)
         ),
         /* bottom, image */
-        url("../img/homepage-product.jpg")
-        /* position the picture in center */
-        center;
+        url("../img/homepage-product.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 .content-company {
-    background-size: cover;
     background:
         /* top, transparent black, faked with gradient */
         linear-gradient(
@@ -96,9 +150,10 @@ Homepage
             rgba(255, 255, 255, 0.2)
         ),
         /* bottom, image */
-        url("../img/homepage-about.jpg")
-        /* position the picture in center */
-        center;
+        url("../img/homepage-about.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 .content-box-title {
