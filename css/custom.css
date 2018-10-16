@@ -11,6 +11,11 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
     padding: 0
 }
 
+hr {
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
 .container {
     padding-right: 15px;
     padding-left: 15px;
