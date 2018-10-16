@@ -3,8 +3,9 @@ body {
     font-family: Arial, sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p, ul, li {
     margin: 0;
+    padding: 0
 }
 
 .container {
@@ -34,16 +35,14 @@ nav {
 
 .nav-menu {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
 }
 
-.nav-menu > li {
+.nav-menu li {
     float: right;
 }
 
-.nav-menu > li a {
+.nav-menu li a {
     display: block;
     color: rgba(0, 0, 0, 0.6);
     text-align: center;
@@ -51,11 +50,11 @@ nav {
     text-decoration: none;
 }
 
-.nav-menu > li.active a {
+.nav-menu li.active a {
     color: rgb(0, 0, 0);
 }
 
-.nav-menu > li a:hover {
+.nav-menu li a:hover {
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 5px;
 }
@@ -65,6 +64,7 @@ Homepage
  */
 .content-box {
     width: 100%;
+    height: 300px;
 }
 
 .content-box a,p,h1 {
@@ -74,7 +74,6 @@ Homepage
 }
 
 .content-product {
-    height: 300px;
     background-size: cover;
     background:
         /* top, transparent black, faked with gradient */
@@ -89,7 +88,6 @@ Homepage
 }
 
 .content-company {
-    height: 300px;
     background-size: cover;
     background:
         /* top, transparent black, faked with gradient */
@@ -110,13 +108,10 @@ Homepage
 
 .content-box-button {
     background-color: rgba(255, 255, 255, 0.9);
-    border: none;
     border-radius: 40px;
     color: black;
     margin-top: 30px;
     padding: 15px 32px;
     text-align: center;
-    text-decoration: none;
     display: inline-block;
-    font-size: 16px;
 }
