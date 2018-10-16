@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/*
+Navigation header and menu
+ */
+nav {
+    background-color: rgba(0, 0, 0, 0.05);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.nav-logo {
+    float: left;
+}
+
+.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.nav-menu > li {
+    float: right;
+}
+
+.nav-menu > li a {
+    display: block;
+    color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.nav-menu > li.active a {
+    color: rgb(0, 0, 0);
+}
+
+.nav-menu > li a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/*
+Homepage
+ */
+.content-box {
+    width: 100%;
+}
+
+.content-box a,p,h1 {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.content-product {
+    height: 300px;
+    background-size: cover;
+    background:
+        /* top, transparent black, faked with gradient */
+        linear-gradient(
+            rgba(255, 255, 255, 0.2),
+            rgba(255, 255, 255, 0.2)
+        ),
+        /* bottom, image */
+        url("../img/homepage-product.jpg")
+        /* position the picture in center */
+        center;
+}
+
+.content-company {
+    height: 300px;
+    background-size: cover;
+    background:
+        /* top, transparent black, faked with gradient */
+        linear-gradient(
+            rgba(255, 255, 255, 0.2),
+            rgba(255, 255, 255, 0.2)
+        ),
+        /* bottom, image */
+        url("../img/homepage-about.jpg")
+        /* position the picture in center */
+        center;
+}
+
+.content-box-title {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.content-box-button {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 40px;
+    color: black;
+    margin-top: 30px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}

@@ -8,51 +8,34 @@
 
     <link rel="shortcut icon" href="favicon.ico" />
 
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/custom.css" />
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav>
     <div class="container">
-        <a class="navbar-brand" href="index.html">
-            <img src="img/logo.png" height="30" alt="El Venezolano" />
+        <a href="index.html" class="nav-logo">
+            <img src="img/logo.png" height="50" alt="El Venezolano" />
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="product.html">Our products</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about-us.html">About us</a>
-                </li>
-            </ul>
-        </div>
+        <ul class="nav-menu">
+            <li><a href="about-us.html">About us</a></li>
+            <li><a href="product.html">Our products</a></li>
+            <li class="active"><a href="index.html">Home</a></li>
+        </ul>
     </div>
 </nav>
-<div class="container">
-    <div class="mb-4">
-        <center class="border-bottom"><h1 class="display-4">OUR PRODUCT</h1></center>
-        <a href="product.html">
-            <img src="img/homepage-product.jpg" class="mt-2 shadow bg-white rounded" alt="Product" style="width: 100%; height: 300px; object-fit: cover;" />
-        </a>
-        <p>Something about my product</p>
+<a href="product.html">
+    <div class="content-box content-product">
+        <center><h1 class="content-box-title">OUR PRODUCT</h1></center>
+        <center><p>Something about my product</p></center>
+        <center><p class="content-box-button">Find out more</p></center>
     </div>
-    <div class="mb-4">
-        <center class="border-bottom"><h1 class="display-4">ABOUT OUR COMPANY</h1></center>
-        <a href="about-us.html">
-            <img src="img/homepage-about.jpg" class="mt-2 shadow bg-white rounded" alt="Product" style="width: 100%; height: 300px; object-fit: cover;" />
-        </a>
-        <p>Something about my company</p>
+</a>
+<a href="about-us.html">
+    <div class="content-box content-company">
+        <center><h1 class="content-box-title">ABOUT OUR COMPANY</h1></center>
+        <center><p>Something about my company</p></center>
+        <center><p class="content-box-button">Find out more</p></center>
     </div>
-</div>
-<script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+</a>
 </body>
 </html>
