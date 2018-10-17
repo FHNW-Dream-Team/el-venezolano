@@ -43,16 +43,27 @@ input:focus,select:focus,textarea:focus,button:focus {
     /* Remove browser auto highlight */
     outline: none;
 }
+input.full-width,textarea.full-width {
+    width: calc(100% - 22px);
+}
 
 button {
     background-color: #107ef4;
     color: #fff;
     padding: 10px;
-    border: 1px solid #4198f6;
+    border: none;
     border-radius: 3px;
+    cursor: pointer;
 }
 button:hover {
     background-color: #4198f6;
+}
+button.full-width {
+    width: 100%;
+}
+
+.mb-5 {
+    margin-bottom: 5px;
 }
 
 /*
