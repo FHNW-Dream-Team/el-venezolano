@@ -133,51 +133,69 @@ footer p {
 /*
 Homepage
  */
-.content-box {
+.jumbotron {
+    position: relative;
     width: 100%;
     height: 300px;
+    overflow: hidden;
+}
+.jumbotron .container {
+    position: relative;
+    z-index: 2;
+    color: #ffffff;
+}
+.jumbotron:after {
+    content:"";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    filter: blur(3px);
+    width: 100%;
+    height: 300px;
+    transform: scale(1.1);
 }
 
-.content-box a,p,h1 {
-    color: black;
+.jumbotron a,p,h1 {
     text-decoration: none;
     display: inline-block;
 }
 
-.content-product {
+.content-product:after {
     background:
         /* top, transparent black, faked with gradient */
         linear-gradient(
-            rgba(255, 255, 255, 0.2),
-            rgba(255, 255, 255, 0.2)
+                rgba(0, 0, 0, 0.2),
+                rgba(0, 0, 0, 0.2)
         ),
         /* bottom, image */
-        url("../img/homepage-product.jpg");
-    background-repeat: no-repeat;
+        url("../img/homepage-product.jpg")
+        /* center image */
+        center center
+        no-repeat;
     background-size: cover;
-    background-position: center center;
 }
 
-.content-company {
+.content-company:after {
     background:
         /* top, transparent black, faked with gradient */
         linear-gradient(
-            rgba(255, 255, 255, 0.2),
-            rgba(255, 255, 255, 0.2)
+            rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.2)
         ),
         /* bottom, image */
-        url("../img/homepage-about.jpg");
-    background-repeat: no-repeat;
+        url("../img/homepage-about.jpg")
+        /* center image */
+        center center
+        no-repeat;
     background-size: cover;
-    background-position: center center;
 }
 
-.content-box-title {
+.jumbotron-title {
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
-.content-box-button {
+.jumbotron-button {
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 40px;
     color: black;
