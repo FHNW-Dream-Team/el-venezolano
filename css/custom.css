@@ -111,11 +111,6 @@ Footer
 .footer-column {
     float: left;
     width: 33.33%;
-}
-
-.footer-column > div {
-    width: 90%;
-    margin: 0 auto;
     padding-top: 20px;
     padding-bottom: 20px;
 }
