@@ -136,7 +136,7 @@ Homepage
     color: #ffffff;
 }
 .jumbotron:after {
-    content:"";
+    content: "";
     position: absolute;
     z-index: 1;
     top: 0;
@@ -196,4 +196,19 @@ Homepage
     padding: 15px 32px;
     text-align: center;
     display: inline-block;
+}
+
+/*
+Product page
+ */
+.product-image {
+    height: 400px;
+    width: 400px;
+    padding: 5px;
+}
+@media (max-width: 600px) {
+    .product-image {
+        height: auto;
+        width: 100%;
+    }
 }
