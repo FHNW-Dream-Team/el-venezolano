@@ -153,7 +153,7 @@ Homepage
     display: inline-block;
 }
 
-.content-product:after {
+.image-product:after {
     background:
         /* top, transparent black, faked with gradient */
         linear-gradient(
@@ -168,7 +168,7 @@ Homepage
     background-size: cover;
 }
 
-.content-company:after {
+.image-company:after {
     background:
         /* top, transparent black, faked with gradient */
         linear-gradient(
