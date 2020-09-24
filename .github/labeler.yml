@@ -1,0 +1,15 @@
+# Add 'repo' label to any root file changes
+repo:
+  - ./*
+
+# Add 'html' label to any change to files with the html ending
+html:
+  - ./**/*.html
+
+# Add 'css' label to any change to files with the css ending
+css:
+  - ./**/*.css
+
+# Add 'javascript' label to any change to files with the js ending
+javascript:
+  - ./**/*.js
